@@ -1,8 +1,10 @@
-Revision history for Bio-SeqAlignment-Components-SeqMapping
+Revision history for {{$dist->name}}
 
-0.03      2024-06-23 06:49:58-06:00 America/Denver
-- Implemented change(s) suggested by  Mario Roy to enhance speed:
+{{$NEXT}}
+- Numerous changes suggested by Mario Roy for speed enhancements:
 1. MCE workers exit with posix_exit, avoiding all END and destructor processing
+2. Using 'for' OMP work sharing construct inside parallel regions
+3. Scheduling threads is now done statically with a no wait clause 
 0.02      2024-06-13 18:22:47-06:00 America/Denver
 - Explicitly reaping workings after processing with MCE by calling shutdown as
 suggested by Mario Roy, the creator of MCE.

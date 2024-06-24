@@ -4,7 +4,7 @@ Bio::SeqAlignment::Components::SeqMapping Components relevant to sequence mappin
 
 # VERSION
 
-version 0.02
+version 0.03
 
 # SYNOPSIS
 
